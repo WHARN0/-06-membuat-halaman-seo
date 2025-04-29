@@ -28,9 +28,8 @@ Favicon adalah ikon kecil yang muncul di tab browser dan bookmark. Favicon memba
 Langkah-langkah:
 
 1.	Siapkan file favicon (format .ico) dan letakkan di folder public/.
-![Screenshot](assets-report/Praktikum2(1).png)
 2.	Hapus faveicon.ico yang ada di folder src/app
-![Screenshot](assets-report/Praktikum2(2).png)
+![Screenshot](assets-report/Praktikum2(1-2).png)
 3.	Update file src/components/layout.tsx untuk menambahkan favicon:
 ![Screenshot](assets-report/Praktikum2(3).png)
 4.	Simpan dan jalankan proyek. Favicon akan muncul di tab browser.
