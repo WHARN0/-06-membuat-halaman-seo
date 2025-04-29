@@ -25,6 +25,7 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Head>
+      <meta name="google-site-verification" content="VHOFIHgeHyK5PJQ2i-pHU9CjVenqbP9t1qm33i_HG6k" />
         <link rel="icon" href="/favicon.ico" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
