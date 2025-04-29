@@ -71,3 +71,6 @@ Setelah menambahkan metadata, favicon, dan Open Graph Tags, Anda dapat menguji S
 Lakukan pengujian SEO dengan
 1.	Gunakan tools seperti Google Search Console untuk memeriksa performa SEO dari suatu website.
 ![Screenshot](assets-report/Tugas1.png)
+Untuk melihat traffic website harus menunggu sekitar 1-3 hari agar terlihat hasil statistik dan performa yang optimal.
+
+Kesimpulan : Website sudah berhasil terdeploy menggunakan Vercel dan bisa dilihat untuk uji performa menggunakan GSC (Google Search Console)
