@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { defaultMetaData } from "../utils/metadata";
 
 export const metadata: Metadata = {
   title: "Esai",
   description: "Halaman esai.",
   openGraph: {
-    title: "Esai",
-    description: "Halaman esai.",
+    images: "https://example.com/default-image.jpg",
+    url: "https://example.com",
   },
 };
 
@@ -24,7 +25,7 @@ function EssayItem({ title, summary, link }: EssayItemProps) {
   );
 }
 
-export default function Essays() {
+export default function Essays({ metadata }: any) {
   const essays: EssayItemProps[] = [
     {
       title: "Belajar Pemrograman Modern",

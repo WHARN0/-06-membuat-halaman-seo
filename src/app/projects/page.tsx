@@ -1,13 +1,13 @@
 import Image from "next/image";
-
 import type { Metadata } from "next";
+import { defaultMetaData } from "../utils/metadata";
 
 export const metadata: Metadata = {
   title: "Proyek",
   description: "Halaman proyek.",
   openGraph: {
-    title: "Proyek",
-    description: "Halaman proyek.",
+    images: "https://example.com/default-image.jpg",
+    url: "https://example.com",
   },
 };
 type ProjectItemProps = {
@@ -33,7 +33,7 @@ function ProjectItem({ name, url, urlDisplay, imageSrc }: ProjectItemProps) {
   );
 }
 
-export default function Projects() {
+export default function Projects({ metadata }: any) {
   return (
     <main className="mt-16 px-8">
       <header className="text-center">

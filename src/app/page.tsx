@@ -1,16 +1,17 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import { defaultMetaData } from "./utils/metadata";
 
 export const metadata: Metadata = {
   title: "Tentang Saya",
   description: "Halaman tentang saya.",
   openGraph: {
-    title: "Tentang Saya",
-    description: "Halaman tentang saya.",
+    images: "https://example.com/default-image.jpg",
+    url: "https://example.com",
   },
 };
 
-export default function Home() {
+export default function Home({ metadata }: any) {
   return (
     <main className="mt-16 px-8">
       <div className="max-w-3xl mx-auto text-center">

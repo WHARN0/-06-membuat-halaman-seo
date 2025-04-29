@@ -50,6 +50,7 @@ Langkah-langkah:
 ![Screenshot](assets-report/Praktikum3(3).png)
 4.	Lanjutkan untuk halaman Proyek dan Esai
 ![Screenshot](assets-report/Praktikum3(4).png)
+![Screenshot](assets-report/Praktikum3(5).png)
 
 ## Praktikum 4 : Open Graph Tags untuk Media Sosial
 
