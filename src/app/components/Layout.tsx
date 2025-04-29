@@ -7,8 +7,21 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
+type ChildWithMetadata = React.ReactNode & {
+  props?: {
+    metadata?: {
+      title: string;
+      description: string;
+      openGraph: {
+        images: string;
+        url: string;
+      };
+    };
+  };
+};
+
 export default function Layout({ children }: LayoutProps) {
-  const metadata = (children as any)?.props?.metadata || defaultMetaData;
+  const metadata = (children as ChildWithMetadata)?.props?.metadata || defaultMetaData;
   return (
     <>
       <Head>
