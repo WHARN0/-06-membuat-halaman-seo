@@ -3,14 +3,12 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { defaultMetaData } from "../utils/metadata";
 
-type Metadata = typeof defaultMetaData;
-
 type LayoutProps = {
-  children: React.ReactNode & { props?: { metadata?: Metadata } };
+  children: React.ReactNode;
 };
 
 export default function Layout({ children }: LayoutProps) {
-  const metadata = children.props?.metadata || defaultMetaData;
+  const metadata = (children as any)?.props?.metadata || defaultMetaData;
   return (
     <>
       <Head>
