@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home({}: any) {
+export default function Home() {
   return (
     <main className="mt-16 px-8">
       <div className="max-w-3xl mx-auto text-center">

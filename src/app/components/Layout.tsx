@@ -3,28 +3,29 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { defaultMetaData } from "../utils/metadata";
 
+type Metadata = typeof defaultMetaData;
+
 type LayoutProps = {
-  children: React.ReactNode;
+  children: React.ReactNode & { props?: { metadata?: Metadata } };
 };
 
 export default function Layout({ children }: LayoutProps) {
-    const metadata = (children as any).props?.metadata || defaultMetaData; 
-
-    return (
-        <>
-        <Head>
-            <link rel="icon" href="/favicon.ico" />
-            <title>{metadata.title}</title>
-            <meta name="description" content={metadata.description}/>
-            {/* Open Graph Tags */}
-            <meta property="og:title" content={metadata.title} />
-            <meta property="og:description" content={metadata.description} />
-            <meta property="og:image" content={metadata.image} />
-            <meta property="og:url" content={metadata.url} />
-        </Head>
-        <Navbar/>
-        <main>{children}</main>
-        <Footer/>
-        </>
-    );
+  const metadata = children.props?.metadata || defaultMetaData;
+  return (
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        {/* Open Graph Tags */}
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={metadata.openGraph.images} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+      </Head>
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 }

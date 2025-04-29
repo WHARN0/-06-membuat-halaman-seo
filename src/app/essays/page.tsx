@@ -25,7 +25,7 @@ function EssayItem({ title, summary, link }: EssayItemProps) {
   );
 }
 
-export default function Essays({}: any) {
+export default function Essays() {
   const essays: EssayItemProps[] = [
     {
       title: "Belajar Pemrograman Modern",

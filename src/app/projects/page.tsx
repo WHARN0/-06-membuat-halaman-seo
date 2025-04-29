@@ -33,7 +33,7 @@ function ProjectItem({ name, url, urlDisplay, imageSrc }: ProjectItemProps) {
   );
 }
 
-export default function Projects({}: any) {
+export default function Projects() {
   return (
     <main className="mt-16 px-8">
       <header className="text-center">
