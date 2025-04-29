@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { defaultMetaData } from "../utils/metadata";
+// import { defaultMetaData } from "../utils/metadata";
 
 export const metadata: Metadata = {
   title: "Esai",

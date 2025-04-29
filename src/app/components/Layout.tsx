@@ -3,10 +3,11 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { defaultMetaData } from "../utils/metadata";
 
-type LayoutProps = {
-  children: React.ReactNode;
-};
+// type LayoutProps = {
+//   children: React.ReactNode;
+// };
 
+// export default function Layout({ children }: any) {
 export default function Layout({ children }: any) {
     const metadata = children.props.metadata|| defaultMetaData; 
 

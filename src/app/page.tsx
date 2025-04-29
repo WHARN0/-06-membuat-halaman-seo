@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
-import { defaultMetaData } from "./utils/metadata";
+// import { defaultMetaData } from "./utils/metadata";
 
 export const metadata: Metadata = {
   title: "Tentang Saya",

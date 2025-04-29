@@ -58,14 +58,13 @@ Open Graph Tags digunakan untuk mengontrol bagaimana konten Anda ditampilkan saa
 Langkah-langkah:
 1.	Pastikan Anda telah menambahkan Open Graph Tags di layout.tsx seperti yang telah dijelaskan sebelumnya.
 2.	Update metadata di setiap halaman untuk menyertakan Open Graph Tags.
-![Screenshot](assets-report/Praktikum4(1).png)
-![Screenshot](assets-report/Praktikum4(2).png)
-![Screenshot](assets-report/Praktikum4(3).png)
 
 ## Praktikum 5 : Menguji SEO
 
 Setelah menambahkan metadata, favicon, dan Open Graph Tags, Anda dapat menguji SEO dengan Membuka halaman di browser dan memeriksa elemen HTML menggunakan Developer Tools (Ctrl + Shift + I atau F12).
-![Screenshot](assets-report/Praktikum5.png)
+![Screenshot](assets-report/Praktikum5(1).png)
+![Screenshot](assets-report/Praktikum5(2).png)
+![Screenshot](assets-report/Praktikum5(3).png)
 
 ## Tugas 
 
